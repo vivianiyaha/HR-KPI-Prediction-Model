@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from pybitget import Client
+from python-bitget import Client
 import time
 import ta
 
