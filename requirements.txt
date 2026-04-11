@@ -1,6 +1,6 @@
 streamlit
 pandas
-scikit
+scikit-learn
 numpy
 pillow
 joblib
