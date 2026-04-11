@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 # ============================
 # LOAD DATA
 # ============================
-df = pd.read_csv('employee-attrition.csv')
+df = pd.read_csv('hrkpidata.csv')
 
 
 # ============================
