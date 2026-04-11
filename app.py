@@ -193,16 +193,3 @@ elif page == 'Profile':
 
     st.write('Connect on LinkedIn:')
     st.write('https://www.linkedin.com/in/vivian-i-556499126/')
-
-        # Short condition
-        elif last_row['ema_short'] < last_row['ema_long'] and 30 < last_row['rsi'] < 70:
-            st.write(f"Placing SHORT trade for {symbol}...")
-            place_order(symbol, "open_short")
-
-        time.sleep(1)  # 1-second delay between checks to avoid rate limits
-
-# Run the bot continuously when started
-while st.session_state.bot_running:
-    for pair in PAIRS:
-        manage_trade(pair)
-    time.sleep(60)  # Run every minute
