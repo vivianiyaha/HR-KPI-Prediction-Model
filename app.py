@@ -9,7 +9,8 @@ from sklearn.ensemble import RandomForestClassifier
 # ============================
 df = pd.read_csv('hrkpidata.csv')
 
-df.index = range(1, len(df) + 1)
+# Add Serial Number column
+df.insert(0, 'S/N', range(1, len(df) + 1))
 
 # ============================
 # DATA PREPROCESSING
