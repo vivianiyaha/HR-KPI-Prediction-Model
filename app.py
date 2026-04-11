@@ -192,7 +192,7 @@ elif page == 'Profile':
     st.write('She is passionate about using data to improve employee performance, reduce attrition, and drive organizational success.')
 
     st.write('Connect on LinkedIn:')
-    st.write('https://www.linkedin.com/in/vivian-i-556499126/')            place_order(symbol, "open_long")
+    st.write('https://www.linkedin.com/in/vivian-i-556499126/')
 
         # Short condition
         elif last_row['ema_short'] < last_row['ema_long'] and 30 < last_row['rsi'] < 70:
