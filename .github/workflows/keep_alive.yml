@@ -1,0 +1,16 @@
+name: Keep Streamlit App Alive
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit App
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" \
+            https://hrdecisiontool.streamlit.app/
+          echo "App pinged successfully"
